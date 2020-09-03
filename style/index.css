@@ -30,14 +30,23 @@ ol, ul {
 /*General Styles*/
 
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     font-size: 62.5%
+}
+
+body {
+    background: #659DBD;
+}
+
+p {
+    color: #FBEEC1;
 }
 
 a {
     text-decoration: none;
     font-size: 1.3rem;
+    color: black;
 }
 
 /*Header Sytles*/
@@ -50,6 +59,7 @@ header {
 
 h2{
     font-size: 2.7rem;
+    color: rgb(222, 222, 222);
 }
 
 nav a{
@@ -58,6 +68,9 @@ nav a{
     padding-top: 1.5%;
     width: 25%;
     border-radius: 10px;
+    border: 1px ridge #BC986A;
+    color: #BC986A;
+    background: #FBEEC1;
 }
 
 header nav{
@@ -65,7 +78,7 @@ header nav{
     width: 30%;
 }
 
-/*First Section Style*/
+/*Background image section style*/
 
 .background-img {
     background-image:linear-gradient(rgba(184, 230, 248, 0.65), rgba(0, 0, 0, 0.50)), url('https://i.picsum.photos/id/1051/4928/3264.jpg?hmac=-O25O5Q9z7LI8gDrUkTUmDJir4F9cp1RadCwShIDGms');
@@ -82,17 +95,27 @@ header nav{
 
 h1{
     font-size: 5rem;
+    color: rgb(222, 222, 222);
+}
+.background-img a {
+    display: inline-block;
+    text-align: center;
+    padding: .5% 0;
+    width: 9%;
+    border-radius: 10px;
+    margin-top: .5%;
+    border: 1px solid rgb(222, 222, 222);
+    color: rgb(222, 222, 222);
 }
 
-/*Second Section Style*/
+/*Rows of Image section style*/
 
 .flex_img_txt {
     height: 110vh;
-    width: 99vw;
+    width: 98vw;
     display: flex;
     flex-flow: column nowrap;
-    border: 2px solid red;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -100,15 +123,33 @@ h1{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-}
-
-.image_and_text {
     font-size: 1rem;
-    height: 100%;
-    width: 100%;
 }
 
-.image_and_text img {
+.row div img {
     height: 100%;
     widows: 100%;
+    margin-bottom: 1.5%;
+    border-radius: 10px;
+}
+
+/*Footer Style*/
+
+footer {
+    background: #8D8741;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    display: inline-block;
+    text-align: center;
+    padding: .5% 0;
+    width: 7%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px ridge #BC986A;
+    color: #BC986A;
+    background: #FBEEC1;
 }
