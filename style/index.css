@@ -154,3 +154,24 @@ footer a{
     color: #BC986A;
     background: #FBEEC1;
 }
+
+/*Animations transitions */
+
+@keyframes click {
+    from {
+        border: 1px solid rgb(222, 222, 222);
+        color: rgb(222, 222, 222);
+        box-shadow: 0 0 10px white;
+    }
+    to {
+        border: 1px solid white;
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.background-img a:hover {
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    transition: all .2s ease-in-out;
+}
