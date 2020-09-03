@@ -86,11 +86,12 @@ header nav{
     background-repeat: no-repeat;
     height: 90vh;
     width: 170vh;
-    margin: 0 auto;
+    margin: 5% auto 2% auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    border-radius: 10%;
 }
 
 h1{
