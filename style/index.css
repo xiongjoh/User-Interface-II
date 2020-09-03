@@ -127,9 +127,13 @@ h1{
     font-size: 1rem;
 }
 
+.row div {
+    width:30%;
+}
+
 .row div img {
     height: 100%;
-    widows: 100%;
+    /* width: 100%; */
     margin-bottom: 1.5%;
     border-radius: 10px;
 }
