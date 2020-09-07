@@ -115,24 +115,28 @@ h1{
     height: 110vh;
     width: 98vw;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     text-align: center;
 }
 
-.row {
+.flex_img_txt div{
+    width: 30%;
+}
+
+/* .row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 1rem;
-}
+} */
 
-.row div {
+/* .row div {
     width:30%;
-}
+} */
 
-.row div img {
-    height: 100%;
+.flex_img_txt div img {
+    height: 80%;
     /* width: 100%; */
     margin-bottom: 1.5%;
     border-radius: 10px;
