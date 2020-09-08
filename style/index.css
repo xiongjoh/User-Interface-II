@@ -41,6 +41,7 @@ body {
 
 p {
     color: #FBEEC1;
+    font-size: 1rem;
 }
 
 a {
@@ -65,7 +66,7 @@ h2{
 nav a{
     display: inline-block;
     text-align: center;
-    padding-top: 1.5%;
+    padding: 1.5% 0;
     width: 25%;
     border-radius: 10px;
     border: 1px ridge #BC986A;
@@ -75,7 +76,7 @@ nav a{
 
 header nav{
     display: flex;
-    width: 30%;
+    width: 40%;
 }
 
 /*Background image section style*/
@@ -85,7 +86,7 @@ header nav{
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
-    width: 170vh;
+    width: 90%;
     margin: 5% auto 2% auto;
     display: flex;
     flex-flow: column;
@@ -112,32 +113,21 @@ h1{
 /*Rows of Image section style*/
 
 .flex_img_txt {
-    height: 110vh;
     width: 98vw;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 }
 
 .flex_img_txt div{
     width: 30%;
+    margin: 1%;
 }
 
-/* .row {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    font-size: 1rem;
-} */
-
-/* .row div {
-    width:30%;
-} */
 
 .flex_img_txt div img {
-    height: 80%;
-    /* width: 100%; */
+    width: 90%;
     margin-bottom: 1.5%;
     border-radius: 10px;
 }
@@ -155,7 +145,7 @@ footer a{
     display: inline-block;
     text-align: center;
     padding: .5% 0;
-    width: 7%;
+    width: 13%;
     margin: auto;
     border-radius: 10px;
     border: 1px ridge #BC986A;
@@ -182,4 +172,39 @@ footer a{
     border: 1px solid white;
     box-shadow: 0 0 10px white;
     transition: all .2s ease-in-out;
+}
+
+/*Responsive Design*/
+
+@media (max-width:800px){
+    header{
+        flex-flow: column;
+        align-items: center;
+    }
+    header nav{
+        width:80%;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .background-img {
+        height: 50vh;
+    }
+    h1 {
+        text-align:center;
+    }
+    .background-img a{
+        width: 25%;
+    }
+    .flex_img_txt div{
+        width: 48%;
+    }
+    footer a{
+        width: 16%;
+    }
+}
+
+@media (max-width:500px){
+    .flex_img_txt div{
+        width: 99%;
+    }
 }
