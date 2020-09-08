@@ -103,7 +103,7 @@ h1{
     display: inline-block;
     text-align: center;
     padding: .5% 0;
-    width: 9%;
+    width: 10%;
     border-radius: 10px;
     margin-top: .5%;
     border: 1px solid rgb(222, 222, 222);
@@ -118,6 +118,7 @@ h1{
     flex-flow: row wrap;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .flex_img_txt div{
@@ -182,6 +183,7 @@ footer a{
         align-items: center;
     }
     header nav{
+        margin-top: 4%;
         width:80%;
         flex-flow: column wrap;
         align-items: center;
