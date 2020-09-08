@@ -1,1 +1,181 @@
 /* Add CSS styling here */
+/*Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	/* border: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+    }
+
+/*General Styles*/
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+body {
+    background: #659DBD;
+}
+
+p {
+    color: #FBEEC1;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+/*Header Sytles*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+h2{
+    font-size: 2.7rem;
+    color: rgb(222, 222, 222);
+}
+
+nav a{
+    display: inline-block;
+    text-align: center;
+    padding-top: 1.5%;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px ridge #BC986A;
+    color: #BC986A;
+    background: #FBEEC1;
+}
+
+header nav{
+    display: flex;
+    width: 30%;
+}
+
+/*Background image section style*/
+
+.background-img {
+    background-image:linear-gradient(rgba(184, 230, 248, 0.65), rgba(0, 0, 0, 0.50)), url('https://i.picsum.photos/id/1051/4928/3264.jpg?hmac=-O25O5Q9z7LI8gDrUkTUmDJir4F9cp1RadCwShIDGms');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 170vh;
+    margin: 5% auto 2% auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+h1{
+    font-size: 5rem;
+    color: rgb(222, 222, 222);
+}
+.background-img a {
+    display: inline-block;
+    text-align: center;
+    padding: .5% 0;
+    width: 9%;
+    border-radius: 10px;
+    margin-top: .5%;
+    border: 1px solid rgb(222, 222, 222);
+    color: rgb(222, 222, 222);
+}
+
+/*Rows of Image section style*/
+
+.flex_img_txt {
+    height: 110vh;
+    width: 98vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.row div {
+    width:30%;
+}
+
+.row div img {
+    height: 100%;
+    /* width: 100%; */
+    margin-bottom: 1.5%;
+    border-radius: 10px;
+}
+
+/*Footer Style*/
+
+footer {
+    background: #8D8741;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    display: inline-block;
+    text-align: center;
+    padding: .5% 0;
+    width: 7%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px ridge #BC986A;
+    color: #BC986A;
+    background: #FBEEC1;
+}
+
+/*Animations transitions */
+
+@keyframes click {
+    from {
+        border: 1px solid rgb(222, 222, 222);
+        color: rgb(222, 222, 222);
+        box-shadow: 0 0 10px white;
+    }
+    to {
+        border: 1px solid white;
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.background-img a:hover {
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    transition: all .2s ease-in-out;
+}
